@@ -1,0 +1,294 @@
+/*CSS reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*ALL*/
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body div{
+    font-family: 微軟正黑體;
+}
+a{
+    text-decoration: none;
+}
+
+
+/*header*/
+.header{
+    position: fixed;
+    background: #fff;   
+    width:100%;
+    z-index: 2;
+}
+.header ul{
+    text-align: right;
+}
+.header li{
+    display: inline-block;
+    margin-right: 5px;    
+}
+
+.club{
+    padding:5px 15px;
+    background: #f9f9f9;
+}
+.club img{
+    padding:0 5px;
+    vertical-align: top;
+}
+.fb a{
+    color:#4460a0;
+}
+.twi a{
+    color:#00aaec;
+}
+.twi{
+    color:#00aaec;
+    border-left: 1px solid #d9d9d9;
+}
+.list img{
+    float: left;
+    margin-top:12px;
+    margin-left:20px;
+}
+
+.list a{
+    color:#0c9;
+    display:block;
+    padding:20px 10px;
+    margin:0 20px;
+    border-bottom: 5px solid #fff;
+}
+
+.list a:hover{
+    border-bottom: 5px solid #0c9;
+}
+
+/*首頁*/
+.home {
+    background-image: url("../img/bg_top.png");
+    background-size:cover;
+    display:block;
+    padding:180px 0 100px 0;
+    margin:0 auto;
+    margin-bottom: 65px;
+}
+
+.home h1{
+    color:#fff;
+    background:rgba(217, 217, 217, 0.05);
+    padding:40px 20px;
+    font-size: 35px;
+    line-height: 1.5;
+}
+
+
+
+
+/*產品介紹*/
+.product{
+    padding:0 20px;
+    margin-bottom: 65px;
+}
+
+.product ul{    
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.training{
+    width:300px;
+    border:1px solid #d9d9d9;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:15px;
+}
+
+.training h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin:10px;
+}
+
+.training p{
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.training ul{
+    font-size: 14px;
+    line-height: 1.5; 
+    list-style: disc;
+    text-indent: 28px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.training div{
+    margin-right: 90px;
+}
+
+/*difference*/
+
+.difference{
+    scroll-behavior: auto;
+}
+.difference h3{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.difference table{
+    margin:0 auto;
+    width:840px;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 65px;
+}
+
+.winner{
+    color: #0c9;
+}
+
+.difference th{
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    background: #f7f7f7;
+    padding:10px 20px;
+}
+
+.difference td{
+    border-bottom: 1px solid #d9d9d9;
+    padding:10px 20px;
+}
+
+.difference tr:hover{
+    background: #e9e9e9;
+}
+
+
+
+/*QnA*/
+.contect{
+    background: linear-gradient(#00654b,#009871);
+    padding:30px 20px;
+}
+
+.contect h4{
+    text-align: center;
+    color:#fff;
+    font-size: 25px;
+    line-height: 1.5;
+}
+.contect form{
+    padding:30px 20px 0;
+}
+
+.info_box{
+    resize: none;
+    width: 46%;
+    min-width: 295px;
+    height: 245px;
+    scroll-behavior: auto;
+    float: left;
+    margin:20px 20px 0;
+    
+}
+
+.info_qlist{
+    width: 46%;
+    min-width: 295px;
+    font-size: 15px;
+    display: inline-block;
+    margin:20px 20px 0;
+
+}
+
+
+.info_qlist label{
+    color:#fff;
+    line-height: 1.5;
+}
+.qinput{
+    width: 100%;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    line-height: 2;
+    padding:10px;
+    margin-bottom: 16px;
+}
+
+.b_submit{
+    width:70px;
+    color:#fff;
+    background: #0c9;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    line-height: 2;
+    float: right;
+}
+
+
+/*footer*/
+.footer{
+    clear: both;
+    font-size: 15px;
+    line-height: 1.5;
+    padding:25px 20px 50px 20px;
+}
+.footer a{
+    color:#e12d80;
+}
+.footer ul{
+    float: right;
+}
